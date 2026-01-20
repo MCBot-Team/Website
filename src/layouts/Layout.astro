@@ -24,14 +24,12 @@ const {
     <meta property="og:image" content="/assets/img/mcbot.png" />
     <meta name="description" content={description} />
 
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "WebSite",
-        "name": "MCBot",
-        "url": "https://mcbot.tech"
-      })}
-    </script>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "MCBot",
+      "url": "https://mcbot.tech"
+    })} />
 
     <link rel="icon" type="image/png" sizes="1024x1024" href="/assets/img/mcbot.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/pulse/bootstrap.min.css" />
