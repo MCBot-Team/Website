@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.12",
+    "@playform/compress": "^0.2.1",
     "astro": "^5.15.8"
   }
 }
