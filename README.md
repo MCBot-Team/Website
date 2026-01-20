@@ -1,5 +1,7 @@
 # MCBot Website
 
+[![Deploy to Cloudflare Pages](https://github.com/MCBot-Team/Website/actions/workflows/deploy.yml/badge.svg)](https://github.com/MCBot-Team/Website/actions/workflows/deploy.yml)
+
 The official website for MCBot - Your all-in-one Discord bot for Minecraft communities.
 
 All commands are run from the root of the project, from a terminal:
