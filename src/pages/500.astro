@@ -1,0 +1,35 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+
+const title = "500 - Internal Server Error";
+const description = "An unexpected error occurred on the server.";
+
+interface Props {
+  error: unknown;
+}
+
+const { error } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+    <div class="container" style="display: flex; align-items: center; justify-content: center; min-height: 90vh; flex-grow: 1;">
+        <!-- 500 Page Content -->
+        <div class="text-center">
+            <h1 style="font-family: 'Minecraft Ten'; font-size: 6rem;">500</h1>
+            <h2 style="font-family: 'Minecraft Ten'; font-size: 2rem;">{ error instanceof Error ? error.message : 'Internal Server Error' }</h2>
+            <p style="font-family: 'Minecraft'; font-size: 1.2rem;">
+                Oops! An unexpected error occurred on the server. Please try again later.
+            </p>
+            <a 
+                class="btn btn-primary btn-lg mt-3" 
+                role="button" 
+                data-bss-hover-animate="tada" 
+                style="font-family: Minecraft;" 
+                href="/"
+            >
+                Go to Home
+            </a>
+        </div>
+    </div>
+</Layout>
